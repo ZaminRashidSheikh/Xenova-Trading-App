@@ -18,7 +18,9 @@ import PrivateRoute from './PrivateRoute';
 
 // ✅ DashboardRedirect component
 function DashboardRedirect() {
-  window.location.href = 'http://localhost:3001';
+  // window.location.href = 'http://localhost:3001';
+  window.location.href = 'https://comforting-licorice-219fcb.netlify.app';
+
   return null;
 }
 

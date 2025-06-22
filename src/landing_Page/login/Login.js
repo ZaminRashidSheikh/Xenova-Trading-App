@@ -21,9 +21,10 @@ function Login() {
       const res = await axios.post('https://xenova-trading-app.onrender.com/api/user/login', formData);
 
       const token = res.data.token;
-      localStorage.setItem('token', token); // ✅ save token
+      localStorage.setItem('token', token);
       alert('Login successful!');
-      navigate('/dashboard'); // ✅ redirect
+      // ✅ Redirect to dashboard Netlify link:
+      window.location.href = 'https://comforting-licorice-219fcb.netlify.app';
     } catch (err) {
       alert(err.response?.data?.msg || 'Login failed');
     }
