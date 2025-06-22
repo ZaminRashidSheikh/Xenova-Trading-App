@@ -18,7 +18,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://xenova-trading-app.onrender.com/login', formData);
+      const res = await axios.post('https://xenova-trading-app.onrender.com/api/user/login', formData);
 
       const token = res.data.token;
       localStorage.setItem('token', token); // ✅ save token
